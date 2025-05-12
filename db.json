@@ -1,0 +1,30 @@
+{
+    "owners": [
+      {
+        "id": 1,
+        "firstName": "Jean",
+        "lastName": "Dupont",
+        "email": "jean.dupont@example.com",
+        "phone": "0102030405",
+        "address": "12 rue des Fleurs",
+        "city": "Paris",
+        "postalCode": "75000",
+        "pets": [
+          {
+            "id": 1,
+            "name": "Rex",
+            "species": "Chien",
+            "visits": [
+              {
+                "id": 1,
+                "date": "2025-04-01",
+                "reason": "Vaccination",
+                "vetName": "Dr Martin"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

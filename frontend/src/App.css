@@ -1,0 +1,55 @@
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+.home-hero {
+  height: 50vh;
+  background: linear-gradient(135deg, #2563eb, #14b8a6);
+  clip-path: polygon(0 0,100% 0,100% 85%,0 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+.home-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: url('./assets/3a.jpg') /cover no-repeat;
+  filter: blur(4px);
+  opacity: 0.2;
+  z-index: 0;
+  animation: fadeIn 2s ease-out forwards;
+}
+.home-hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+
+.hover-card {
+  border: 1px solid #e2e8f0;
+  transition: transform .3s, box-shadow .3s;
+}
+.hover-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 0.2; }
+}
+.home-banner-img-wrapper {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.home-banner-img {
+  max-width: 100%;
+  height: auto;
+  filter: blur(4px);
+  border-radius: 8px;
+}
